@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-screen">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,21 @@
         <link rel="stylesheet" href="src/output.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="font-sans" style="background-image: url(../images/Netflix-Background.jpg);">
+    <body class="font-sans m-0 p-0 h-full text-white bg-gray-700 bg-blend-hard-light" style="background-image: url(../images/Netflix-Background.jpg);">
         <div class="top m-6 flex justify-between flex-row">
-            <div class="logo"><img class="w-36" src="../images/Netflix-logo.png"></div>
+            <a class="logo" href="https://netflix.com" target="_blank"><img class="w-36" src="../images/Netflix-logo.png"></a>
             <div class="topbuttons flex flex-row">
-                <div class="eng w-24 text-white border-2 text-center content-center">English</div>
-                <div class="si w-24 text-white content-center text-center">Sign In</div>
+                <a href="#" class="eng w-24  border-2 text-center content-center">English</a>
+                <div class="si ml-2 w-20 bg-red-600 rounded-sm content-center text-center">Sign In</div>
             </div>
         </div>
-        <div class="center">
-            <div class="main">Unlimited movies, TV shows, and more.</div>
-            <div class="mainsub">Watch anywhere. Cancel anytime.</div>
-            <div class="rtw">Ready to watch? Enter your email to create or restart your membership.</div>
-            <div class="ebar">
-                <div class="ea">Email address</div>
-                <div class="gs">Get started</div>
+        <div class="center font-bold h-4/6 flex flex-col justify-center text-center ">
+            <div class="main leading-loose text-6xl">Unlimited movies, TV shows, and more.</div>
+            <div class="mainsub leading-loose text-3xl">Watch anywhere. Cancel anytime.</div>
+            <div class="rtw leading-loose text-3xl">Ready to watch? Enter your email to create or restart your membership.</div>
+            <div class="ebar h-20 font-normal leading-loose flex justify-center items-center">
+                <div class="ea p-4 pr-52 bg-white rounded-sm text-gray-400">Email address</div>
+                <div class="gs p-4 bg-red-600 rounded-sm">Get started</div>
             </div>
         </div>
     </body>
